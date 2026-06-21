@@ -1,4 +1,4 @@
-//1st
+//1st Variables and Datatype
 const profile = {
     username: "dewakarki",
     isfollow: true,
@@ -10,7 +10,7 @@ const profile = {
 console.log(profile["bio"]);
 
 
-//2nd 
+//2nd Operators and Conditional sentences
 const product = {
     title: "Pen",
     rating: 4,
@@ -47,3 +47,19 @@ else if (score>=50 && score<=59) {
 else{
     console.log("F");
 }
+
+
+//5th Loops and Strings
+for (let i = 0; i <= 100; i++) {
+    if (i % 2 == 0) {
+        console.log("num", i);
+    }
+}
+
+let num = 43;
+let usernum = parseInt(prompt("Guess the number that you think the Dewa selected:"));
+while( usernum !== num) {
+    usernum = parseInt(prompt("Take another guess:"));
+}
+
+console.log("Well you did it");
