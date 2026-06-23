@@ -93,3 +93,8 @@ for ( i=0; i<prices.length; i++ ){
     finalprices= prices[i] - (1/10 * prices[i]);    // prices[i]/10; and then prices[i] -= finalprices; 
     console.log(finalprices);
 }
+
+let company = ["Bloomberg", "Microsoft", "Google", "IBM", "Netflix", "Brave"];
+// company.shift();
+// company.splice(4,1, "PrimeVideos");
+company.push("Amazon");
