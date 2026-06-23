@@ -69,3 +69,27 @@ console.log("Well you did it");
 let name= prompt(" Enter your name:");
 let username= "@" + name + name.length;
 console.log("Your username is", username);
+
+
+//arrays
+let marks= [85, 97, 44, 37, 76, 60];
+let sum=0;
+for( i=0; i<marks.length; i++) {
+    sum += marks[i];
+}
+let average= sum / marks.length;
+console.log("The average marks of the class is", average);
+
+// or
+// for (let val of marks){
+//     sum += val;
+// }
+// .......
+// console.log(`avg marks of the class = ${avg}`);
+
+let prices = [250, 645, 300, 900, 50];
+let finalprices;
+for ( i=0; i<prices.length; i++ ){
+    finalprices= prices[i] - (1/10 * prices[i]);    // prices[i]/10; and then prices[i] -= finalprices; 
+    console.log(finalprices);
+}
