@@ -142,3 +142,27 @@ let sq = (val) => {
 }
 arrays.forEach(sq);
 
+
+let marksofStudent= [85, 97, 44, 37, 76, 60, 95, 100, 99, 88, 91];
+let filteredmarks= marksofStudent.filter((val) => {
+    return val >= 90;
+});
+console.log(filteredmarks);
+
+
+let n= parseInt(prompt("Enter any number:"));
+let arrayofNumber= [];
+for (let i=1; i<=n; i++){
+    arrayofNumber[i-1]= i;
+}
+console.log(arrayofNumber);
+
+const output = arrayofNumber.reduce((acc, val) => {   //sum of numbers in the array using reduce method
+    return acc + val;
+});
+console.log(output);
+
+const productofNumbers = arrayofNumber.reduce((res, val) => {   //product of numbers in the array using reduce method. Its also called as factorial.
+    return res * val;
+});
+console.log(productofNumbers);
