@@ -166,3 +166,23 @@ const productofNumbers = arrayofNumber.reduce((res, val) => {   //product of num
     return res * val;
 });
 console.log(productofNumbers);
+
+
+
+//DOM
+let h2= document.querySelector("h2");
+console.dir(h2.innerText);
+h2.innerText = h2.innerText + " This is Dewa's first DOM manipulation";
+
+
+let divs = document.querySelectorAll(".box");
+console.log(divs);
+divs[0].innerText = "This is the first div";
+divs[1].innerText = "This is the second div";
+divs[2].innerText = "This is the third div";
+
+//let idx = 0;
+// for (let div of divs){
+//     div.innerText = `This is the div number ${idx}`;
+//     idx++;
+// }
