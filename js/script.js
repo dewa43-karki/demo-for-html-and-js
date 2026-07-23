@@ -186,3 +186,14 @@ divs[2].innerText = "This is the third div";
 //     div.innerText = `This is the div number ${idx}`;
 //     idx++;
 // }
+
+
+let btn1 = document.createElement("button");
+btn1.innerText = "Click Me";
+btn1.style.backgroundColor = "red";
+btn1.style.color = "white";
+document.querySelector("body").prepend(btn1);
+
+
+let para3 = document.querySelector("p");
+para3.classList.add("newPara");
