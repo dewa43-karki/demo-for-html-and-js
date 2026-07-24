@@ -169,7 +169,7 @@ console.log(productofNumbers);
 
 
 
-//DOM
+//6th DOM
 let h2= document.querySelector("h2");
 console.dir(h2.innerText);
 h2.innerText = h2.innerText + " This is Dewa's first DOM manipulation";
@@ -197,3 +197,22 @@ document.querySelector("body").prepend(btn1);
 
 let para3 = document.querySelector("p");
 para3.classList.add("newPara");
+
+
+
+// 7th Events
+let mode = document.querySelector("#modeButton");
+let Currentmode = "light";
+mode.addEventListener("click", () => {
+    if (Currentmode === "light") {
+        Currentmode = "dark";
+        document.querySelector("body").style.backgroundColor = "black";
+        document.querySelector("body").style.color = "white";
+       
+    } else {
+        Currentmode = "light";
+        document.querySelector("body").style.backgroundColor = "white";
+    }
+    console.log("The mode is", Currentmode);
+});
+
